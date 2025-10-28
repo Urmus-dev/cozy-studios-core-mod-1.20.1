@@ -19,7 +19,7 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("general")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 100)
     @ConfigEntry.Gui.Tooltip
-    public int tranquilLanternRadius = 25;
+    public int tranquilLanternRadius = 35;
 
     @ConfigEntry.Category("general")
     public boolean tranquilLanternBump = true;
