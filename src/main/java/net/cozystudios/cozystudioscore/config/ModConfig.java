@@ -19,7 +19,12 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("general")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 100)
     @ConfigEntry.Gui.Tooltip
-    public int tranquilLanternRadius = 35;
+    public int tranquilLanternRadius = 25;
+
+    @ConfigEntry.Category("general")
+    public boolean tranquilLanternBump = true;
+    @ConfigEntry.Category("general")
+    public boolean tranquilLanternBurn = false;
 
     // ======================
     // Kiln
@@ -93,6 +98,8 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("fernling")
     @ConfigEntry.Gui.Tooltip
     public double fernlingBonemealChance = 0.15; // 15%
+
+
 
     // ======================
     // Helpers
